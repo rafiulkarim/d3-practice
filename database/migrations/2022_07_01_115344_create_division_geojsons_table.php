@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('lat', 50);
             $table->string('long', 50);
+            $table->integer('coordinate_code');
             $table->foreignId('division_id')->constrained('divisions')->onDelete('cascade');
             $table->timestamps();
         });

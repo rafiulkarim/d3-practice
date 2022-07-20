@@ -13,6 +13,7 @@ class DivisionGeojson extends Model
         'lat',
         'long',
         'division_id',
+        'coordinate_code',
     ];
 
     public function division(){

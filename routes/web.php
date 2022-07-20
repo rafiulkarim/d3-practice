@@ -27,3 +27,4 @@ Route::get('/division-geojson', [\App\Http\Controllers\DivisionController::class
     ->name('div_geojson');
 
 Route::get('test', [\App\Http\Controllers\TestController::class, 'test'])->name('test');
+Route::get('create-data', [\App\Http\Controllers\DivisionController::class, 'create_data'])->name('create_data');

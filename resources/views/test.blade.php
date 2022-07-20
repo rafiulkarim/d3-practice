@@ -32,7 +32,7 @@
         console.log(data)
 
         var myColor = d3.scaleLinear()
-            .range(["lightblue", "blue"])
+            .range(["green"])
             .domain([0, 8]);
 
         const getColor = (d) => {

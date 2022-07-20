@@ -28,10 +28,10 @@
     d3.json('http://127.0.0.1:8000/division-geojson').then(data => {
         console.log(data)
 
-        data.features.geometry.coordinates.forEach(d => console.log(typeof d[0]))
+        // data.features.geometry.coordinates.forEach(d => console.log(typeof d[0]))
 
         var myColor = d3.scaleLinear()
-            .range(["lightblue", "blue"])
+            .range(["green", "red"])
             .domain([0, 8]);
 
         const getColor = (d) => {
