@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,3 +29,8 @@ Route::get('/division-geojson', [\App\Http\Controllers\DivisionController::class
 
 Route::get('test', [\App\Http\Controllers\TestController::class, 'test'])->name('test');
 Route::get('create-data', [\App\Http\Controllers\DivisionController::class, 'create_data'])->name('create_data');
+
+Route::get('line-chart', [TestController::class, 'line_chart']);
+
+Route::get('gmp-index', [\App\Http\Controllers\GmpGirlsController::class, 'index']);
+Route::get('gmp_data', [\App\Http\Controllers\GmpGirlsController::class, 'gmp_data']);

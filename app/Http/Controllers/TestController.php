@@ -10,4 +10,9 @@ class TestController extends Controller
     {
         return view('test');
     }
+
+    public function line_chart()
+    {
+        return view('line-chart');
+    }
 }
