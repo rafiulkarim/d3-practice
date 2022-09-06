@@ -96,9 +96,8 @@
             .attr("transform", "translate(0," + (height) + ")")
             .call(d3.axisBottom(x).ticks(30).tickSizeOuter(0))
 
-
         var y = d3.scaleLinear()
-            .domain([0, data.gmpData[60]['z3n'] + 50])
+            .domain([0, data.gmpData[60]['z3n'] + 30])
             .range([height, 0]);
 
         svg.append("g")

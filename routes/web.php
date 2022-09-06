@@ -34,3 +34,11 @@ Route::get('line-chart', [TestController::class, 'line_chart']);
 
 Route::get('gmp-index', [\App\Http\Controllers\GmpGirlsController::class, 'index']);
 Route::get('gmp_data', [\App\Http\Controllers\GmpGirlsController::class, 'gmp_data']);
+
+Route::get('rfm/all', [\App\Http\Controllers\TestController::class, 'rfm']);
+
+
+Route::get('yajra-box', [\App\Http\Controllers\TestController::class, 'yajra_box']);
+Route::get('yajra-box-data', [\App\Http\Controllers\TestController::class, 'yajra_box_data'])->name('yajra_box_data');
+
+Route::resource('employee', \App\Http\Controllers\EmployeeController::class);
